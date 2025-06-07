@@ -1,0 +1,161 @@
+{
+    "info": {
+        "_postman_id": "7f4c9d0a-a5b0-454e-a34e-1c7192943a6b",
+        "name": "Event Mgnt",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "http://127.0.0.1:8000/api/events/",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/events/",
+                    "path": [
+                        "api",
+                        "events"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"Bengaluru Event 8\",\n  \"location\": \"Bengaluru\",\n  \"start_time\": \"2025-06-08T04:52:39.183Z\",\n  \"end_time\": \"2025-06-09T04:52:39.183Z\",\n  \"max_capacity\": 3\n}"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8000/api/events/",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/events/",
+                    "path": [
+                        "api",
+                        "events"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8000/api/events/",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000//api/events/10/register/",
+                    "path": [
+                        "api",
+                        "events",
+                        "10",
+                        "register"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n    \"name\": \"Person 14\",\n    \"email\": \"Person14@gmail.com\"\n}"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8000/api/events/",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/events/10/attendees/?page=1&page_size=5",
+                    "query": [
+                        {
+                            "key": "page",
+                            "value": "1"
+                        },
+                        {
+                            "key": "page_size",
+                            "value": "5"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "api",
+                        "events",
+                        "10",
+                        "attendees"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        },
+        {
+            "name": "http://127.0.0.1:8000/api/events/8/attendees/?page=1&page_size=20",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/events/8/attendees/?page=1&page_size=20",
+                    "query": [
+                        {
+                            "key": "page",
+                            "value": "1"
+                        },
+                        {
+                            "key": "page_size",
+                            "value": "20"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "api",
+                        "events",
+                        "8",
+                        "attendees"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        }
+    ]
+}
